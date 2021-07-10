@@ -1,0 +1,81 @@
+/* секция Наша команда */
+.our-team {
+    background-color: $bg-team-filter;
+    padding: 60px 0 60px 0;
+    @media screen and(min-width:$desktop) {
+       padding: 94px 0 94px 0;
+    }
+ }
+ 
+ .our-team__main-header {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.178;
+    text-align: center;
+    letter-spacing: inherit;
+    margin-bottom: 50px;
+    @media screen and(min-width:$tablet) {
+       margin-bottom: $basic-card-gap;
+    }
+    @media screen and(min-width:$desktop) {
+       font-size: 36px;
+       line-height: 1.166;
+       text-align: center;
+       letter-spacing: inherit;
+       margin-bottom: 50px;
+    }
+ }
+ 
+ .our-team__item {
+    background-color: $main-color;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+ 
+    @media screen and(max-width:767px) {
+       &:not(:last-child) {
+          margin-bottom: $basic-card-gap;
+       }
+    }
+    @media screen and(min-width:$tablet) {
+       width: calc((100% - 1 * 30px) / 2);
+       @media screen and(max-width:1199px) {
+          &:nth-child(2n + 1) {
+             margin-right: $basic-card-gap;
+          }
+          &:nth-child(-n + 2) {
+             margin-bottom: $basic-card-gap;
+          }
+       }
+    }
+    @media screen and(min-width:$desktop) {
+       width: calc((100% - 3 * 30px) / 4);
+       &:not(:last-child) {
+          margin-right: $basic-card-gap;
+       }
+    }
+ }
+ .our-team__card-description {
+    padding: 30px;
+ }
+ .our-team__name {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.187;
+    letter-spacing: inherit;
+    margin-bottom: 10px;
+ }
+ .our-team__position {
+    font-size: 16px;
+    letter-spacing: inherit;
+    text-align: center;
+    line-height: 1.187;
+    margin-bottom: 16px;
+    color: $second-text-color;
+ }
+ .our-team__list {
+    @media screen and(min-width:$tablet) {
+       display: flex;
+       flex-wrap: wrap;
+    }
+ }

@@ -1,0 +1,9 @@
+/* шапка сайта */
+.header {
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+ 
+    @media screen and(min-width:$tablet) {
+       height: 80px;
+    }
+ }

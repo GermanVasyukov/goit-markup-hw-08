@@ -1,0 +1,80 @@
+/* секция клиенты */
+.customers {
+    padding: 60px 0 60px 0;
+    @media screen and(min-width:$desktop) {
+       padding: 94px 0 94px 0;
+    }
+ }
+ .customers__header {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: inherit;
+    margin-bottom: $basic-card-gap;
+    @media screen and(min-width:$desktop) {
+       font-size: 36px;
+       line-height: 1.166;
+       margin-bottom: 50px;
+    }
+ }
+ .customers__list {
+    display: flex;
+    @media screen and(max-width:767px) {
+       flex-wrap: wrap;
+    }
+    @media screen and(min-width:$tablet) {
+       @media screen and(max-width:1199px) {
+          flex-wrap: wrap;
+          margin-top: -$basic-card-gap;
+          margin-left: -$basic-card-gap;
+       }
+    }
+ }
+ .customers__item {
+    @media screen and(max-width:767px) {
+       width: calc((100% - 1 * 30px) / 2);
+       &:nth-child(2n + 1) {
+          margin-right: $basic-card-gap;
+       }
+       &:nth-child(-n + 4) {
+          margin-bottom: $basic-card-gap;
+       }
+    }
+    @media screen and(min-width:$tablet) {
+       display: block;
+       width: calc((100% - 3 * 30px) / 3);
+       @media screen and(max-width:1199px) {
+          margin-top: $basic-card-gap;
+          margin-left: $basic-card-gap;
+       }
+    }
+    @media screen and(min-width:$desktop) {
+       width: calc((100% - 5 * 30px) / 6);
+       &:not(:last-child) {
+          margin-right: $basic-card-gap;
+       }
+    }
+ }
+ .customers__link {
+    @include centeredFlex();
+ 
+    height: 92px;
+    border-radius: 4px;
+    color: rgba(175, 177, 184, 1);
+    border: 1px solid rgba(175, 177, 184, 1);
+    transition-property: border, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    &:hover,
+    &:focus {
+       border: 1px solid $special-color;
+       color: $special-color;
+    }
+ }
+ .customer__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+ }

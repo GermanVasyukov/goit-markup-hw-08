@@ -1,0 +1,40 @@
+/* контейнеры всех секций */
+.container {
+    max-width: $mobile;
+    margin: 0 auto;
+    padding: 0 15px;
+ 
+    .hero & {
+       display: flex;
+       flex-direction: column;
+    }
+    .header & {
+       display: flex;
+       position: relative;
+    }
+    & .menu-container {
+       position: relative;
+    }
+    @media screen and(min-width:$tablet) {
+       max-width: $tablet;
+       .footer & {
+          display: flex;
+          align-items: baseline;
+          flex-wrap: wrap;
+          justify-content: space-around;
+       }
+    }
+ 
+    @media screen and(min-width:$desktop) {
+       max-width: $desktop;
+       display: flex;
+ 
+       .hero &,
+       .business &,
+       .our-team &,
+       .customers &,
+       .portfolio-content & {
+          flex-direction: column;
+       }
+    }
+ }
