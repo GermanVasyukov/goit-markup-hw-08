@@ -9,7 +9,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
        ),
-       url();
+       url(../images/header-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,7 +24,7 @@
              rgba(47, 48, 58, 0.4),
              rgba(47, 48, 58, 0.4)
           ),
-          url();
+          url(../images/header-mobile.jpg);
     }
  
     @media screen and(min-width:$tablet) {
@@ -33,7 +33,7 @@
              rgba(47, 48, 58, 0.4),
              rgba(47, 48, 58, 0.4)
           ),
-          url();
+          url(../images/header-tablet.jpg);
     }
     @media (min-device-pixel-ratio: 2),
        (-webkit-min-device-pixel-ratio: 2),
@@ -44,7 +44,7 @@
              rgba(47, 48, 58, 0.4),
              rgba(47, 48, 58, 0.4)
           ),
-          url();
+          url(../images/header-tablet.jpg);
     }
  
     @media screen and(min-width:$desktop) {
@@ -56,7 +56,7 @@
              rgba(47, 48, 58, 0.4),
              rgba(47, 48, 58, 0.4)
           ),
-          url();
+          url(../images/header-desktop.jpg);
  
        @media (min-device-pixel-ratio: 2),
           (-webkit-min-device-pixel-ratio: 2),
@@ -67,7 +67,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
              ),
-             url();
+             url(../images/header-desktop.jpg);
        }
     }
  }
